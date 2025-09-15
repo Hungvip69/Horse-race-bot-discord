@@ -24,7 +24,7 @@ Bot Discord đua ngựa cá cược vui nhộn được xây dựng bằng Node.
 
 ```bash
 git clone https://github.com/Hungvip69/Horse-race-bot-discord
-cd bot-horse-race
+cd Horse-race-bot-discord
 ```
 
 2. Cài đặt các dependencies:
