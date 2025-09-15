@@ -1,112 +1,154 @@
-# Bot Đua Ngựa Discord
+# 🏇 Horse Race Discord Bot
 
-Bot Discord đua ngựa cá cược vui nhộn được xây dựng bằng Node.js và discord.js v14.
-*all ts code make by claude 3.7 sonnet btw :D
+<div align="center">
 
-## Tính năng
+![Horse Racing](https://img.shields.io/badge/🐎-Horse%20Racing-success?style=for-the-badge)
+![Discord.js](https://img.shields.io/badge/Discord.js-v14-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![License](https://img.shields.io/badge/License-ISC-blue?style=for-the-badge)
 
-- **Đặt cược**: Người chơi có thể đặt cược vào một con ngựa (1-5)
-- **Đua ngựa**: Mô phỏng cuộc đua ngựa với hiệu ứng trực quan
-- **Hệ thống tiền tệ**: Người chơi bắt đầu với 1000 coin, thắng nhận gấp đôi số cược
-- **Quà hàng ngày**: Nhận 500 coin mỗi ngày
-- **Bảng xếp hạng**: Xem người chơi giàu nhất
+**Bot Discord đua ngựa cá cược vui nhộn được xây dựng bằng Node.js và discord.js v14**
 
-## Cài đặt
+*Made with ❤️ by Claude 3.7 Sonnet*
 
-### Yêu cầu
+</div>
 
-- Node.js (v16.9.0 trở lên)
-- npm hoặc yarn
+---
 
-### Các bước cài đặt
+## ✨ Tính năng chính
 
-1. Clone repository này:
+🎯 **Đặt cược thông minh** - Đặt cược vào ngựa yêu thích (1-5) với chiến lược riêng
 
+🏁 **Đua ngựa sống động** - Mô phỏng cuộc đua ngựa với hiệu ứng trực quan hấp dẫn
+
+💰 **Hệ thống tiền tệ** - Bắt đầu với 1000 coin, thắng nhận gấp đôi số cược
+
+🎁 **Quà hàng ngày** - Nhận 500 coin miễn phí mỗi ngày
+
+🏆 **Bảng xếp hạng** - Cạnh tranh với bạn bè để trở thành người giàu nhất
+
+---
+
+## 🚀 Cài đặt nhanh
+
+### Yêu cầu hệ thống
+- **Node.js** v16.9.0 trở lên
+- **npm** hoặc **yarn**
+
+### 📦 Bước 1: Clone dự án
 ```bash
 git clone https://github.com/Hungvip69/Horse-race-bot-discord
 cd Horse-race-bot-discord
 ```
 
-2. Cài đặt các dependencies:
-
+### 📋 Bước 2: Cài đặt dependencies
 ```bash
 npm install
 # hoặc
 yarn install
 ```
 
-3. Tạo file `.env` từ file `.env.example`:
-
+### ⚙️ Bước 3: Cấu hình bot
 ```bash
 cp .env.example .env
 ```
 
-4. Cập nhật file `.env` với token và client ID của bot Discord của bạn:
-
-```
+Chỉnh sửa file `.env`:
+```env
 TOKEN=your_discord_bot_token_here
 CLIENT_ID=your_discord_bot_client_id_here
 ```
 
-5. Khởi chạy bot:
-
+### 🎮 Bước 4: Khởi chạy bot
 ```bash
 npm start
 # hoặc
 node index.js
 ```
 
-## Cách sử dụng
+---
 
-Bot sử dụng prefix `!` cho tất cả các lệnh.
+## 🎯 Hướng dẫn sử dụng
 
-### Các lệnh có sẵn
+> **Prefix:** `!` - Sử dụng cho tất cả các lệnh
 
-- `!bet <ngựa> <số_tiền>` - Đặt cược vào một con ngựa (1-5)
-- `!race` - Bắt đầu cuộc đua ngựa
-- `!balance` - Xem số tiền hiện có
-- `!leaderboard` - Xem bảng xếp hạng người chơi
-- `!daily` - Nhận quà tặng hằng ngày (500 coin)
-- `!help` - Hiển thị hướng dẫn sử dụng
+### 📋 Danh sách lệnh
 
-### Luật chơi
+| Lệnh | Mô tả | Ví dụ |
+|------|-------|-------|
+| `!bet <ngựa> <số_tiền>` | Đặt cược vào ngựa (1-5) | `!bet 3 100` |
+| `!race` | Bắt đầu cuộc đua ngựa | `!race` |
+| `!balance` | Kiểm tra số dư hiện tại | `!balance` |
+| `!leaderboard` | Xem bảng xếp hạng | `!leaderboard` |
+| `!daily` | Nhận quà tặng hàng ngày | `!daily` |
+| `!help` | Hiển thị trợ giúp | `!help` |
 
-1. Mỗi người chơi bắt đầu với 1000 coin.
-2. Sử dụng lệnh `!bet` để đặt cược vào một con ngựa (1-5).
-3. Sử dụng lệnh `!race` để bắt đầu cuộc đua.
-4. Nếu ngựa bạn đặt cược thắng, bạn sẽ nhận được gấp đôi số tiền cược.
-5. Nếu ngựa bạn đặt cược thua, bạn sẽ mất số tiền đã cược.
-6. Sử dụng lệnh `!daily` để nhận 500 coin mỗi ngày.
+### 🎲 Luật chơi
 
-## Cấu trúc dự án
+1. 💰 **Vốn khởi đầu:** Mỗi người chơi nhận 1000 coin
+2. 🎯 **Đặt cược:** Chọn ngựa số 1-5 và đặt cược
+3. 🏁 **Bắt đầu đua:** Sử dụng `!race` để khởi động cuộc đua
+4. 🏆 **Thắng cược:** Nhận gấp đôi số tiền đã cược
+5. 💸 **Thua cược:** Mất toàn bộ số tiền đã đặt
+6. 🎁 **Quà hàng ngày:** 500 coin miễn phí mỗi 24 giờ
+
+---
+
+## 📁 Cấu trúc dự án
 
 ```
 bot-horse-race/
-├── commands/           # Các lệnh của bot
-│   ├── balance.js      # Lệnh xem số dư
-│   ├── bet.js          # Lệnh đặt cược
-│   ├── daily.js        # Lệnh nhận quà hàng ngày
-│   ├── help.js         # Lệnh hiển thị hướng dẫn
-│   ├── leaderboard.js  # Lệnh xem bảng xếp hạng
-│   └── race.js         # Lệnh bắt đầu đua ngựa
-├── data/               # Dữ liệu của bot
-│   └── players.json    # Dữ liệu người chơi
-├── utils/              # Các tiện ích
-│   ├── betManager.js   # Quản lý cược
-│   ├── playerManager.js # Quản lý người chơi
-│   └── raceManager.js  # Quản lý đua ngựa
-├── .env                # Biến môi trường
-├── .env.example        # Mẫu biến môi trường
-├── .gitignore          # Các file bị bỏ qua bởi git
-├── index.js            # File chính để khởi chạy bot
-├── package.json        # Thông tin dự án và dependencies
-└── README.md           # Hướng dẫn sử dụng
+├── 📂 commands/           # Các lệnh của bot
+│   ├── 💰 balance.js      # Kiểm tra số dư
+│   ├── 🎯 bet.js          # Đặt cược
+│   ├── 🎁 daily.js        # Quà hàng ngày
+│   ├── ❓ help.js         # Trợ giúp
+│   ├── 🏆 leaderboard.js  # Bảng xếp hạng
+│   └── 🏇 race.js         # Đua ngựa
+├── 📂 data/               # Dữ liệu lưu trữ
+│   └── 👥 players.json    # Thông tin người chơi
+├── 📂 utils/              # Tiện ích hỗ trợ
+│   ├── 🎲 betManager.js   # Quản lý cược
+│   ├── 👤 playerManager.js # Quản lý người chơi
+│   └── 🏁 raceManager.js  # Quản lý đua ngựa
+├── 🔧 .env                # Cấu hình môi trường
+├── 📝 .env.example        # Mẫu cấu hình
+├── 🚫 .gitignore          # Loại trừ file
+├── ⚡ index.js            # File khởi chạy chính
+├── 📦 package.json        # Thông tin dự án
+└── 📖 README.md           # Tài liệu hướng dẫn
 ```
 
-## Đóng góp
+---
 
-Mọi đóng góp đều được hoan nghênh! Hãy tạo issue hoặc pull request nếu bạn muốn cải thiện bot.
+## 🤝 Đóng góp
 
-## Giấy phép
+Chúng tôi hoan nghênh mọi đóng góp từ cộng đồng! 
 
-Dự án này được phân phối dưới giấy phép ISC.
+### Cách đóng góp:
+1. 🍴 Fork dự án này
+2. 🌿 Tạo branch mới (`git checkout -b feature/AmazingFeature`)
+3. 💾 Commit thay đổi (`git commit -m 'Add some AmazingFeature'`)
+4. 📤 Push lên branch (`git push origin feature/AmazingFeature`)
+5. 🔄 Mở Pull Request
+
+### Báo lỗi:
+- 🐛 Tạo **Issue** mới với mô tả chi tiết
+- 💡 Đề xuất tính năng mới
+- 📝 Cải thiện tài liệu
+
+---
+
+## 📄 Giấy phép
+
+Dự án này được phân phối dưới **Giấy phép ISC**. Xem file `LICENSE` để biết thêm chi tiết.
+
+---
+
+<div align="center">
+
+### 🌟 Nếu bạn thấy dự án hữu ích, hãy cho một Star! ⭐
+
+**Made with 💖 by [Hungvip69](https://github.com/Hungvip69)**
+
+</div>
