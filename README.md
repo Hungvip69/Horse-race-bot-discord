@@ -141,7 +141,7 @@ Chúng tôi hoan nghênh mọi đóng góp từ cộng đồng!
 
 ## 📄 Giấy phép
 
-Dự án này được phân phối dưới **Giấy phép ISC**. Xem file `LICENSE` để biết thêm chi tiết.
+Dự án này được phân phối dưới **Giấy phép ISC**.
 
 ---
 
