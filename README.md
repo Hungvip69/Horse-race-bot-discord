@@ -9,7 +9,7 @@
 
 **Bot Discord đua ngựa cá cược vui nhộn được xây dựng bằng Node.js và discord.js v14**
 
-*Made with ❤️ by Claude 3.7 Sonnet*
+*this whole project is done by claude 🤣*
 
 </div>
 
