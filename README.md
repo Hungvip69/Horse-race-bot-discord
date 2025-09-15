@@ -1,6 +1,7 @@
 # Bot Đua Ngựa Discord
 
 Bot Discord đua ngựa cá cược vui nhộn được xây dựng bằng Node.js và discord.js v14.
+*all ts code make by claude 3.7 sonnet btw :D
 
 ## Tính năng
 
